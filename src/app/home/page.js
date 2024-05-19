@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import DateTime from "@/helpers/dateTime";
 import Dashboard from "@/page/tabs/dashboard";
+import BudgetTab from "@/page/tabs/budget";
 
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -197,7 +198,7 @@ export default function MiniDrawer() {
           {selectedTab === "Dashboard" ? (
             <Dashboard />
           ) : selectedTab === "Budget" ? (
-            <div>Budget</div>
+            <BudgetTab />
           ) : selectedTab === "Transactions" ? (
             <div>Transactions</div>
           ) : (
