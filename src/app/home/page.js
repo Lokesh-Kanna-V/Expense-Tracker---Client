@@ -26,6 +26,7 @@ import ListItemText from "@mui/material/ListItemText";
 import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import CurrencyExchangeIcon from "@mui/icons-material/CurrencyExchange";
+import Transactions from "@/page/tabs/transactions";
 
 const drawerWidth = 240;
 
@@ -200,7 +201,7 @@ export default function MiniDrawer() {
           ) : selectedTab === "Budget" ? (
             <BudgetTab />
           ) : selectedTab === "Transactions" ? (
-            <div>Transactions</div>
+            <Transactions />
           ) : (
             <></>
           )}
